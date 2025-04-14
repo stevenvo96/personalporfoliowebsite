@@ -11,7 +11,7 @@ This project showcases how I deployed my **personal portfolio website** using va
   Acts as a global CDN (Content Delivery Network), efficiently delivering content to users around the world. It sits between users and the S3 bucket to improve speed and security.
 
 - **Amazon Route 53**  
-  Handles DNS configuration for my custom domain — [vosteven.com](https://www.vosteven.com) — ensuring correct routing to the CloudFront distribution.
+  Handles DNS configuration for my custom domain [vosteven.com](https://www.vosteven.com) ensuring correct routing to the CloudFront distribution.
 
 - **AWS Certificate Manager (ACM)**  
   Manages SSL/TLS certificates, providing HTTPS encryption to keep user data secure.
