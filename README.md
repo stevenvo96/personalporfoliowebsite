@@ -1,16 +1,33 @@
-#Personal Portfolio Website
+## 🌐 Welcome to My Personal Portfolio Deployment Project
 
-Welcome to this project, where I deploy my personal portfolio website using AWS services!
+This project showcases how I deployed my **personal portfolio website** using various **AWS services** for scalability, performance, and security.
 
-*Services used:
+### 🚀 Services Used:
 
-- **Amazon S3**: Used S3 to host and serve the files necessary for the website to run. This includes HTML, CSS, JavaScript, and image files.
-- **CloudFront**: Used as the content delivery network (CDN) to securely and efficiently deliver my portfolio website to users across the globe. It acts as the middle layer between users and my S3 bucket
-- **Amazon Route53**: Used to manage the DNS configuration for my custom domain, ensuring that users accessing my domain (vosteven.com) are correctly routed to my website hosted on CloudFront
-- **ACM Certificate Manager** Used to provision and manage an SSL/TLS certificate, ensuring that all traffic to my website is encrypted and secure over HTTPS
-- **AWS Lambda**: Used to create a serverless backend function that handles contact form submissions from my portfolio website. When a user fills out and submits the form, the data is sent to an API Gateway endpoint, which triggers the Lambda function
-- **API Gateway**: Acts as the front door to my backend services. It allows the front-end (HTML/JavaScript website) to securely communicate with AWS services such as Lambda. It is the bridge between the contact form on the website and Lambda function.
-- **DynamoDB**: Used to store contact form submissions sent through the portfolio website. 
+- **Amazon S3**  
+  Used to host and serve the static files required for the website, including HTML, CSS, JavaScript, and images.
 
-Website can be found below.
-https://www.vosteven.com
+- **Amazon CloudFront**  
+  Acts as a global CDN (Content Delivery Network), efficiently delivering content to users around the world. It sits between users and the S3 bucket to improve speed and security.
+
+- **Amazon Route 53**  
+  Handles DNS configuration for my custom domain — [vosteven.com](https://www.vosteven.com) — ensuring correct routing to the CloudFront distribution.
+
+- **AWS Certificate Manager (ACM)**  
+  Manages SSL/TLS certificates, providing HTTPS encryption to keep user data secure.
+
+- **AWS Lambda**  
+  Powers a serverless backend function triggered when users submit the contact form. The Lambda function processes the data received through the API Gateway.
+
+- **Amazon API Gateway**  
+  Serves as a secure entry point for HTTP requests from the website. It connects the frontend (contact form) to the Lambda backend.
+
+- **Amazon DynamoDB**  
+  Stores contact form submissions in a scalable, serverless NoSQL database.
+
+---
+
+### 🔗 Live Website
+
+You can view the deployed website here:  
+👉 [https://www.vosteven.com](https://www.vosteven.com)
